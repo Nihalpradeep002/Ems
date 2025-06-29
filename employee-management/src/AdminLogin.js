@@ -8,7 +8,7 @@ function AdminLogin({ onLoginSuccess }) {
   const handleLogin = e => {
     e.preventDefault();
 
-    // Simple hardcoded check for demo purposes
+   
     if (username === 'admin' && password === 'admin123') {
       onLoginSuccess();
     } else {
