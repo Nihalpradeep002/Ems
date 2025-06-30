@@ -112,8 +112,8 @@ function EmployeeDetails() {
   <button
     className="btn btn-outline-danger"
     onClick={() => {
-      localStorage.removeItem("token"); // Remove token or any other auth data
-      window.location.href = "/login";  // Redirect to login (or use React Router)
+      localStorage.removeItem("token"); 
+      window.location.href = "/login";  
     }}
   >
     Logout
