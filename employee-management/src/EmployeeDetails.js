@@ -107,6 +107,18 @@ function EmployeeDetails() {
   return (
     <div className="container py-4">
       <h2 className="text-center mb-4">Employee Management</h2>
+<div className="d-flex justify-content-between align-items-center mb-4">
+  <h2 className="text-center m-0">Employee Management</h2>
+  <button
+    className="btn btn-outline-danger"
+    onClick={() => {
+      localStorage.removeItem("token"); // Remove token or any other auth data
+      window.location.href = "/login";  // Redirect to login (or use React Router)
+    }}
+  >
+    Logout
+  </button>
+</div>
 
       <input
         className="form-control mb-3"
